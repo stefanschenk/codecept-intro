@@ -1,0 +1,5 @@
+### codeceptjs ###
+output/
+
+### node/npm ###
+node_modules/

@@ -1,0 +1,17 @@
+{
+  "tests": "./features/*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "Puppeteer": {
+      "url": "http://todomvc.com/examples/angularjs/#/"
+    },
+    "REST": {}
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "workshop-introduction-codeceptjs"
+}
