@@ -4,6 +4,7 @@
   "output": "./output",
   "helpers": {
     "Puppeteer": {
+      "show": true,
       "url": "http://todomvc.com/examples/angularjs/#/"
     },
     "REST": {}
