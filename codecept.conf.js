@@ -3,6 +3,7 @@ exports.config = {
     bootstrap: false,
 
     helpers: {
+        Mochawesome: {},
         Puppeteer: {
             show: true,
             url: 'http://todomvc.com/examples/angularjs/#/'
@@ -14,7 +15,30 @@ exports.config = {
         I: './steps_file.js'
     },
 
-    mocha: {},
+    mocha: {
+        'reporterOptions': {
+            'codeceptjs-cli-reporter': {
+                stdout: '-',
+                options: {
+                    verbose: false,
+                    steps: true
+                }
+            },
+            'mocha-junit-reporter': {
+                stdout: '-',
+                options: {
+                    mochaFile: './output/result.xml'
+                }
+            },
+            mochawesome: {
+                stdout: './output/console.log',
+                options: {
+                    reportDir: './output',
+                    reportFilename: 'report'
+                }
+            }
+        }
+    },
     name: 'workshop-introduction-codeceptjs',
 
     output: './output',
