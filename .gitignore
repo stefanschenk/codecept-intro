@@ -1,5 +1,8 @@
 ### codeceptjs ###
 output/
 
+### intellij ###
+*.iml
+
 ### node/npm ###
 node_modules/
