@@ -8,6 +8,9 @@ Scenario('Add a new todo and cleanup at the end', (I) => {
         'Create workshop introduction CodeceptJS');
     I.pressKey('Enter');
 
+    // Make a screenshot
+    I.saveScreenshot('todo-created.png');
+
     // Assert the to-do is created
     I.see('introduction CodeceptJS');
 
@@ -15,6 +18,13 @@ Scenario('Add a new todo and cleanup at the end', (I) => {
     I.moveCursorTo('div.view label');
     I.click('.destroy');
 
+    // Make another screenshot
+    I.saveScreenshot('todo-removed.png');
+
     // Assert the to-do is deleted
     I.dontSee('introduction CodeceptJS');
+
+    I.addMochawesomeContext({title: 'Test completed',
+        value: './todo-created.png'});
+    I.addMochawesomeContext('./todo-removed.png');
 });
