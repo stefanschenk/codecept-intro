@@ -10,7 +10,8 @@
   "license": "MIT",
   "scripts": {
     "pretest": "rimraf output",
-    "test": "codeceptjs run --reporter mocha-multi"
+    "test": "codeceptjs run --reporter mocha-multi",
+    "test-rest": "codeceptjs run useless_api_test --reporter mocha-multi"
   },
   "devDependencies": {
     "codeceptjs": "^1.2.1",

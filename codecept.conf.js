@@ -8,7 +8,15 @@ exports.config = {
             show: true,
             url: 'http://todomvc.com/examples/angularjs/#/'
         },
-        REST: {}
+        REST: {
+            endpoint: 'https://useless-api.azurewebsites.net',
+            timeout: 30000,
+            resetHeaders: true,
+            defaultHeaders: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        }
     },
 
     include: {
