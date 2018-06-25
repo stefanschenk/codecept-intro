@@ -16,6 +16,10 @@ exports.config = {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             }
+        },
+        UnirestHelper: {
+            require: './helpers/unirest.helper.js',
+            endpoint: 'https://useless-api.azurewebsites.net'
         }
     },
 

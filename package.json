@@ -14,6 +14,8 @@
     "test-rest": "codeceptjs run useless_api_test --reporter mocha-multi"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-subset": "^1.6.0",
     "codeceptjs": "^1.2.1",
     "mocha-junit-reporter": "^1.17.0",
     "mocha-multi": "^1.0.1",
