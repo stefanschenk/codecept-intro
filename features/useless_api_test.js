@@ -1,7 +1,7 @@
 Feature('Do something with the Useless API');
 
-Scenario('I should be able to get all quotes', (I) => {
-  I.sendGetRequest('/quotes');
+Scenario('I should be able to get all quotes', function* (I) {
+  let response = yield I.sendGetRequest('/quotes');
 
   I.seeStatus(response, 200);
 });

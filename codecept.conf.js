@@ -6,7 +6,7 @@ exports.config = {
         Mochawesome: {},
         Puppeteer: {
             show: true,
-            url: 'http://todomvc.com/examples/angularjs/#/'
+            url: 'https://useless-react-app.azurewebsites.net'
         },
         REST: {
             endpoint: 'https://useless-api.azurewebsites.net',

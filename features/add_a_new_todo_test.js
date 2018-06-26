@@ -11,4 +11,4 @@ Scenario('Add a new todo and cleanup at the end', (I) => {
     I.addMochawesomeContext({title: 'Test completed',
         value: './todo-created.png'});
     I.addMochawesomeContext('./todo-removed.png');
-});
+}).config('Puppeteer', { url: 'http://todomvc.com/examples/angularjs/#/' });
