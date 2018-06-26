@@ -24,7 +24,8 @@ exports.config = {
     },
 
     include: {
-        I: './steps_file.js'
+        I: './steps_file.js',
+        ContactForm: './pages/contact_form.page.js'
     },
 
     mocha: {
